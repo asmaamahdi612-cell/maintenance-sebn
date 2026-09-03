@@ -1,0 +1,28 @@
+/* Animation d'alerte pour les cartes dépassant le seuil */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(244, 63, 94, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(244, 63, 94, 0.4);
+  }
+}
+
+.alert-glow {
+  animation: pulseGlow 2s infinite ease-in-out;
+}
+
+/* Style de la barre de défilement */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #080b11;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
